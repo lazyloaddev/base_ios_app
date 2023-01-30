@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5E32900297E9E0C00E10E13 /* BaseIosAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E328FF297E9E0C00E10E13 /* BaseIosAppApp.swift */; };
+		F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E328FF297E9E0C00E10E13 /* MyApp.swift */; };
 		F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E32901297E9E0C00E10E13 /* ContentView.swift */; };
 		F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32903297E9E0C00E10E13 /* Assets.xcassets */; };
-		F5E32907297E9E0C00E10E13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32906297E9E0C00E10E13 /* Preview Assets.xcassets */; };
+		F5E32907297E9E0C00E10E13 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32906297E9E0C00E10E13 /* PreviewAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F5E328FC297E9E0C00E10E13 /* BaseIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5E328FF297E9E0C00E10E13 /* BaseIosAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIosAppApp.swift; sourceTree = "<group>"; };
+		F5E328FF297E9E0C00E10E13 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		F5E32901297E9E0C00E10E13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5E32903297E9E0C00E10E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F5E32906297E9E0C00E10E13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F5E3290D297EA60D00E10E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F5E32906297E9E0C00E10E13 /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
+		F5E3290D297EA60D00E10E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,21 +52,45 @@
 		F5E328FE297E9E0C00E10E13 /* BaseIosApp */ = {
 			isa = PBXGroup;
 			children = (
-				F5E3290D297EA60D00E10E13 /* Info.plist */,
-				F5E328FF297E9E0C00E10E13 /* BaseIosAppApp.swift */,
-				F5E32901297E9E0C00E10E13 /* ContentView.swift */,
-				F5E32903297E9E0C00E10E13 /* Assets.xcassets */,
-				F5E32905297E9E0C00E10E13 /* Preview Content */,
+				F5E32ABB2987981900E10E13 /* App */,
+				F5E32ABC2987982A00E10E13 /* Configuration */,
+				F5E32ABD2987983500E10E13 /* Resources */,
 			);
 			path = BaseIosApp;
 			sourceTree = "<group>";
 		};
-		F5E32905297E9E0C00E10E13 /* Preview Content */ = {
+		F5E32905297E9E0C00E10E13 /* PreviewContent */ = {
 			isa = PBXGroup;
 			children = (
-				F5E32906297E9E0C00E10E13 /* Preview Assets.xcassets */,
+				F5E32906297E9E0C00E10E13 /* PreviewAssets.xcassets */,
 			);
-			path = "Preview Content";
+			path = PreviewContent;
+			sourceTree = "<group>";
+		};
+		F5E32ABB2987981900E10E13 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F5E328FF297E9E0C00E10E13 /* MyApp.swift */,
+				F5E32901297E9E0C00E10E13 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F5E32ABC2987982A00E10E13 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F5E3290D297EA60D00E10E13 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F5E32ABD2987983500E10E13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5E32903297E9E0C00E10E13 /* Assets.xcassets */,
+				F5E32905297E9E0C00E10E13 /* PreviewContent */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5E32907297E9E0C00E10E13 /* Preview Assets.xcassets in Resources */,
+				F5E32907297E9E0C00E10E13 /* PreviewAssets.xcassets in Resources */,
 				F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */,
-				F5E32900297E9E0C00E10E13 /* BaseIosAppApp.swift in Sources */,
+				F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +294,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BaseIosApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BaseIosApp/Resources/PreviewContent\"";
 				DEVELOPMENT_TEAM = GMD7EK7S94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BaseIosApp/Info.plist;
+				INFOPLIST_FILE = BaseIosApp/Configuration/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,11 +330,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BaseIosApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BaseIosApp/Resources/PreviewContent\"";
 				DEVELOPMENT_TEAM = GMD7EK7S94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BaseIosApp/Info.plist;
+				INFOPLIST_FILE = BaseIosApp/Configuration/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
