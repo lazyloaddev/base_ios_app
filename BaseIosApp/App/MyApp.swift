@@ -8,7 +8,7 @@ struct MyApp: App {
         let stringThreed = "Строка 3"
         let stringFourth = "Строка 4"
         
-        return WindowGroup {
+        WindowGroup {
             return VStack {
                 Text(stringFirst)
                 Text(stringSecond)
@@ -18,5 +18,17 @@ struct MyApp: App {
                 Text("Строка 6")
             }
         }
+        
+        WindowGroup {
+            return VStack {
+                Text(stringFirst)
+                Text(stringSecond)
+                Text(stringThreed)
+                Text(stringFourth)
+                Text("Строка 5")
+                Text("Строка 6")
+            }
+        }
+        
     }
 }
