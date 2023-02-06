@@ -9,11 +9,11 @@ struct MyApp: App {
             let stringSecond = "Строка 2"
             
             return VStack {
-                Text(stringFirst)
-                Text(stringSecond)
-                Text("Строка 3")
-                Text("Строка 4")
-                Text("Строка 5")
+                return Text(stringFirst)
+                return Text(stringSecond)
+                return Text("Строка 3")
+                return Text("Строка 4")
+                return Text("Строка 5")
                 return Text("Строка 6")
             }
         }
