@@ -14,7 +14,10 @@ struct MyApp: App {
                 Text(stringFirst)
                 Text(stringSecond)
                 Text(stringThreed)
-                Text("Строка 4")
+                
+                let stringFourth = "Строка 4"
+                
+                Text(stringFourth)
                 Text("Строка 5")
                 Text("Строка 6")
             }
