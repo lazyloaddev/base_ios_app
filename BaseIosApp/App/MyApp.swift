@@ -6,9 +6,11 @@ struct MyApp: App {
         let stringFirst = "Строка 1"
         
         return WindowGroup {
+            let stringSecond = "Строка 2"
+            
             return VStack {
                 Text(stringFirst)
-                Text("Строка 2")
+                Text(stringSecond)
                 Text("Строка 3")
                 Text("Строка 4")
                 Text("Строка 5")
