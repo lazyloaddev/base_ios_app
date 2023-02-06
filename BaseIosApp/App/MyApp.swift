@@ -3,8 +3,8 @@ import SwiftUI
 @main
 struct MyApp: App {
     var body: some Scene {
-        WindowGroup {
-            VStack {
+        return WindowGroup {
+            return VStack {
                 Text("Строка 1")
                 Text("Строка 2")
                 Text("Строка 3")
