@@ -14,7 +14,7 @@ struct MyApp: App {
                 Text("Строка 3")
                 Text("Строка 4")
                 Text("Строка 5")
-                Text("Строка 6")
+                return Text("Строка 6")
             }
         }
     }
