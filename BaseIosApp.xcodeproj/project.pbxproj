@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F58746BF29C831700059E3AA /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */; };
+		F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58746C029C83B100059E3AA /* CustomFonts.swift */; };
+		F58746C329C843430059E3AA /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */; };
+		F58746C529C848390059E3AA /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */; };
+		F58746C729C8487E0059E3AA /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */; };
 		F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E328FF297E9E0C00E10E13 /* MyApp.swift */; };
 		F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E32901297E9E0C00E10E13 /* ContentView.swift */; };
 		F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32903297E9E0C00E10E13 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		F58746C029C83B100059E3AA /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
 		F5E328FC297E9E0C00E10E13 /* BaseIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E328FF297E9E0C00E10E13 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		F5E32901297E9E0C00E10E13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F58746BB29C82EB40059E3AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */,
+				F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */,
+				F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */,
+				F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */,
+				F58746C029C83B100059E3AA /* CustomFonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		F5E328F3297E9E0C00E10E13 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,7 @@
 		F5E32ABD2987983500E10E13 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F58746BB29C82EB40059E3AA /* Fonts */,
 				F5E32903297E9E0C00E10E13 /* Assets.xcassets */,
 				F5E32905297E9E0C00E10E13 /* PreviewContent */,
 			);
@@ -152,7 +175,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58746C329C843430059E3AA /* Ubuntu-Bold.ttf in Resources */,
+				F58746BF29C831700059E3AA /* Ubuntu-Regular.ttf in Resources */,
+				F58746C729C8487E0059E3AA /* Ubuntu-BoldItalic.ttf in Resources */,
 				F5E32907297E9E0C00E10E13 /* PreviewAssets.xcassets in Resources */,
+				F58746C529C848390059E3AA /* Ubuntu-Italic.ttf in Resources */,
 				F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */,
 				F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */,
 				F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */,
 			);
@@ -299,6 +327,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseIosApp/Configuration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -335,6 +364,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseIosApp/Configuration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

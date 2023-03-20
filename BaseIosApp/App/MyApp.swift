@@ -3,34 +3,42 @@ import SwiftUI
 @main
 struct MyApp: App {
     var body: some Scene {
-        let stringFirst = "Строка 1"
-        let stringSecond = "Строка 2"
-        let stringThreed = "Строка 3"
-        let stringFourth = "Строка 4"
-        
-        return Group {
-            WindowGroup {
-                return VStack {
-                    Text(stringFirst)
-                    Text(stringSecond)
-                    Text(stringThreed)
-                    Text(stringFourth)
-                    Text("Строка 5")
-                    Text("Строка 6")
-                }
+        WindowGroup {
+            VStack {
+                Text("Fried eggs with ham, 2 eggs")
+                Text("Fried eggs with ham, 2 eggs")
+                Text("Fried eggs with ham, 2 eggs")
+                Text("Fried eggs with ham, 2 eggs")
             }
-            
-            WindowGroup {
-                return VStack {
-                    Text(stringFirst)
-                    Text(stringSecond)
-                    Text(stringThreed)
-                    Text(stringFourth)
-                    Text("Строка 5")
-                    Text("Строка 6")
-                }
-            }
+            .font(FontBuilder.title.font)
+            .lineSpacing(FontBuilder.title.lineSpacing)
+            .padding(.vertical, FontBuilder.title.verticalPadding)
+            .foregroundColor(Color(cgColor: CGColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)))
         }
         
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
