@@ -7,11 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523AA4229D1B5F500977D41 /* CustomColors.swift */; };
 		F58746BF29C831700059E3AA /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */; };
 		F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58746C029C83B100059E3AA /* CustomFonts.swift */; };
 		F58746C329C843430059E3AA /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */; };
 		F58746C529C848390059E3AA /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */; };
 		F58746C729C8487E0059E3AA /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */; };
+		F5B76B1D29E3CECF0069CAA5 /* MPLUSRounded1c-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1829E3CEC70069CAA5 /* MPLUSRounded1c-Regular.ttf */; };
+		F5B76B1E29E3CECF0069CAA5 /* MPLUSRounded1c-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1929E3CEC70069CAA5 /* MPLUSRounded1c-Black.ttf */; };
+		F5B76B1F29E3CECF0069CAA5 /* MPLUSRounded1c-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1B29E3CEC80069CAA5 /* MPLUSRounded1c-ExtraBold.ttf */; };
+		F5B76B2029E3CECF0069CAA5 /* MPLUSRounded1c-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1C29E3CEC80069CAA5 /* MPLUSRounded1c-Medium.ttf */; };
+		F5B76B2129E3CECF0069CAA5 /* MPLUSRounded1c-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1A29E3CEC70069CAA5 /* MPLUSRounded1c-Thin.ttf */; };
+		F5B76B2229E3CECF0069CAA5 /* MPLUSRounded1c-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1729E3CEC70069CAA5 /* MPLUSRounded1c-Light.ttf */; };
+		F5B76B2329E3CECF0069CAA5 /* MPLUSRounded1c-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1629E3CEC70069CAA5 /* MPLUSRounded1c-Bold.ttf */; };
+		F5B76B3129E3CF630069CAA5 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2529E3CF620069CAA5 /* Roboto-Black.ttf */; };
+		F5B76B3229E3CF630069CAA5 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2629E3CF620069CAA5 /* Roboto-LightItalic.ttf */; };
+		F5B76B3329E3CF630069CAA5 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2729E3CF620069CAA5 /* Roboto-MediumItalic.ttf */; };
+		F5B76B3429E3CF630069CAA5 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2829E3CF620069CAA5 /* Roboto-Thin.ttf */; };
+		F5B76B3529E3CF630069CAA5 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2929E3CF620069CAA5 /* Roboto-ThinItalic.ttf */; };
+		F5B76B3629E3CF630069CAA5 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2A29E3CF620069CAA5 /* Roboto-BoldItalic.ttf */; };
+		F5B76B3729E3CF630069CAA5 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2B29E3CF630069CAA5 /* Roboto-Italic.ttf */; };
+		F5B76B3829E3CF630069CAA5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2C29E3CF630069CAA5 /* Roboto-Regular.ttf */; };
+		F5B76B3929E3CF630069CAA5 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2D29E3CF630069CAA5 /* Roboto-Medium.ttf */; };
+		F5B76B3A29E3CF630069CAA5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2E29E3CF630069CAA5 /* Roboto-Bold.ttf */; };
+		F5B76B3B29E3CF630069CAA5 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2F29E3CF630069CAA5 /* Roboto-BlackItalic.ttf */; };
+		F5B76B3C29E3CF630069CAA5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B3029E3CF630069CAA5 /* Roboto-Light.ttf */; };
+		F5B76B3F29E3D2060069CAA5 /* CustomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B76B3E29E3D2060069CAA5 /* CustomIcons.swift */; };
 		F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E328FF297E9E0C00E10E13 /* MyApp.swift */; };
 		F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E32901297E9E0C00E10E13 /* ContentView.swift */; };
 		F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32903297E9E0C00E10E13 /* Assets.xcassets */; };
@@ -19,11 +40,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F523AA4229D1B5F500977D41 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		F58746C029C83B100059E3AA /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 		F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
 		F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F5B76B1629E3CEC70069CAA5 /* MPLUSRounded1c-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Bold.ttf"; sourceTree = "<group>"; };
+		F5B76B1729E3CEC70069CAA5 /* MPLUSRounded1c-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Light.ttf"; sourceTree = "<group>"; };
+		F5B76B1829E3CEC70069CAA5 /* MPLUSRounded1c-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Regular.ttf"; sourceTree = "<group>"; };
+		F5B76B1929E3CEC70069CAA5 /* MPLUSRounded1c-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Black.ttf"; sourceTree = "<group>"; };
+		F5B76B1A29E3CEC70069CAA5 /* MPLUSRounded1c-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Thin.ttf"; sourceTree = "<group>"; };
+		F5B76B1B29E3CEC80069CAA5 /* MPLUSRounded1c-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F5B76B1C29E3CEC80069CAA5 /* MPLUSRounded1c-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Medium.ttf"; sourceTree = "<group>"; };
+		F5B76B2529E3CF620069CAA5 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		F5B76B2629E3CF620069CAA5 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		F5B76B2729E3CF620069CAA5 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F5B76B2829E3CF620069CAA5 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		F5B76B2929E3CF620069CAA5 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F5B76B2A29E3CF620069CAA5 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F5B76B2B29E3CF630069CAA5 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		F5B76B2C29E3CF630069CAA5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		F5B76B2D29E3CF630069CAA5 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		F5B76B2E29E3CF630069CAA5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		F5B76B2F29E3CF630069CAA5 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F5B76B3029E3CF630069CAA5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		F5B76B3E29E3D2060069CAA5 /* CustomIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIcons.swift; sourceTree = "<group>"; };
 		F5E328FC297E9E0C00E10E13 /* BaseIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E328FF297E9E0C00E10E13 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		F5E32901297E9E0C00E10E13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,16 +85,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F523AA4129D1B5BC00977D41 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F523AA4229D1B5F500977D41 /* CustomColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		F58746BB29C82EB40059E3AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F5B76B2429E3CF580069CAA5 /* Roboto */,
+				F5B76B1529E3CEBD0069CAA5 /* MPLUSRounded1c */,
+				F5B76B1429E3CEAA0069CAA5 /* Ubuntu */,
+				F58746C029C83B100059E3AA /* CustomFonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F5B76B1429E3CEAA0069CAA5 /* Ubuntu */ = {
 			isa = PBXGroup;
 			children = (
 				F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */,
 				F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */,
 				F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */,
 				F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */,
-				F58746C029C83B100059E3AA /* CustomFonts.swift */,
 			);
-			path = Fonts;
+			path = Ubuntu;
+			sourceTree = "<group>";
+		};
+		F5B76B1529E3CEBD0069CAA5 /* MPLUSRounded1c */ = {
+			isa = PBXGroup;
+			children = (
+				F5B76B1929E3CEC70069CAA5 /* MPLUSRounded1c-Black.ttf */,
+				F5B76B1629E3CEC70069CAA5 /* MPLUSRounded1c-Bold.ttf */,
+				F5B76B1B29E3CEC80069CAA5 /* MPLUSRounded1c-ExtraBold.ttf */,
+				F5B76B1729E3CEC70069CAA5 /* MPLUSRounded1c-Light.ttf */,
+				F5B76B1C29E3CEC80069CAA5 /* MPLUSRounded1c-Medium.ttf */,
+				F5B76B1829E3CEC70069CAA5 /* MPLUSRounded1c-Regular.ttf */,
+				F5B76B1A29E3CEC70069CAA5 /* MPLUSRounded1c-Thin.ttf */,
+			);
+			path = MPLUSRounded1c;
+			sourceTree = "<group>";
+		};
+		F5B76B2429E3CF580069CAA5 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				F5B76B2529E3CF620069CAA5 /* Roboto-Black.ttf */,
+				F5B76B2F29E3CF630069CAA5 /* Roboto-BlackItalic.ttf */,
+				F5B76B2E29E3CF630069CAA5 /* Roboto-Bold.ttf */,
+				F5B76B2A29E3CF620069CAA5 /* Roboto-BoldItalic.ttf */,
+				F5B76B2B29E3CF630069CAA5 /* Roboto-Italic.ttf */,
+				F5B76B3029E3CF630069CAA5 /* Roboto-Light.ttf */,
+				F5B76B2629E3CF620069CAA5 /* Roboto-LightItalic.ttf */,
+				F5B76B2D29E3CF630069CAA5 /* Roboto-Medium.ttf */,
+				F5B76B2729E3CF620069CAA5 /* Roboto-MediumItalic.ttf */,
+				F5B76B2C29E3CF630069CAA5 /* Roboto-Regular.ttf */,
+				F5B76B2829E3CF620069CAA5 /* Roboto-Thin.ttf */,
+				F5B76B2929E3CF620069CAA5 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		F5B76B3D29E3D1F40069CAA5 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F5B76B3E29E3D2060069CAA5 /* CustomIcons.swift */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		F5E328F3297E9E0C00E10E13 = {
@@ -109,6 +210,8 @@
 		F5E32ABD2987983500E10E13 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F5B76B3D29E3D1F40069CAA5 /* Icons */,
+				F523AA4129D1B5BC00977D41 /* Colors */,
 				F58746BB29C82EB40059E3AA /* Fonts */,
 				F5E32903297E9E0C00E10E13 /* Assets.xcassets */,
 				F5E32905297E9E0C00E10E13 /* PreviewContent */,
@@ -176,11 +279,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				F58746C329C843430059E3AA /* Ubuntu-Bold.ttf in Resources */,
+				F5B76B2329E3CECF0069CAA5 /* MPLUSRounded1c-Bold.ttf in Resources */,
+				F5B76B3A29E3CF630069CAA5 /* Roboto-Bold.ttf in Resources */,
+				F5B76B3429E3CF630069CAA5 /* Roboto-Thin.ttf in Resources */,
+				F5B76B3229E3CF630069CAA5 /* Roboto-LightItalic.ttf in Resources */,
 				F58746BF29C831700059E3AA /* Ubuntu-Regular.ttf in Resources */,
+				F5B76B1F29E3CECF0069CAA5 /* MPLUSRounded1c-ExtraBold.ttf in Resources */,
+				F5B76B3B29E3CF630069CAA5 /* Roboto-BlackItalic.ttf in Resources */,
+				F5B76B3529E3CF630069CAA5 /* Roboto-ThinItalic.ttf in Resources */,
 				F58746C729C8487E0059E3AA /* Ubuntu-BoldItalic.ttf in Resources */,
+				F5B76B3929E3CF630069CAA5 /* Roboto-Medium.ttf in Resources */,
+				F5B76B2129E3CECF0069CAA5 /* MPLUSRounded1c-Thin.ttf in Resources */,
+				F5B76B3C29E3CF630069CAA5 /* Roboto-Light.ttf in Resources */,
 				F5E32907297E9E0C00E10E13 /* PreviewAssets.xcassets in Resources */,
+				F5B76B2029E3CECF0069CAA5 /* MPLUSRounded1c-Medium.ttf in Resources */,
+				F5B76B1E29E3CECF0069CAA5 /* MPLUSRounded1c-Black.ttf in Resources */,
+				F5B76B3629E3CF630069CAA5 /* Roboto-BoldItalic.ttf in Resources */,
+				F5B76B1D29E3CECF0069CAA5 /* MPLUSRounded1c-Regular.ttf in Resources */,
 				F58746C529C848390059E3AA /* Ubuntu-Italic.ttf in Resources */,
+				F5B76B3829E3CF630069CAA5 /* Roboto-Regular.ttf in Resources */,
+				F5B76B3329E3CF630069CAA5 /* Roboto-MediumItalic.ttf in Resources */,
+				F5B76B3129E3CF630069CAA5 /* Roboto-Black.ttf in Resources */,
+				F5B76B3729E3CF630069CAA5 /* Roboto-Italic.ttf in Resources */,
 				F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */,
+				F5B76B2229E3CECF0069CAA5 /* MPLUSRounded1c-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +315,9 @@
 			files = (
 				F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */,
 				F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */,
+				F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */,
 				F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */,
+				F5B76B3F29E3D2060069CAA5 /* CustomIcons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

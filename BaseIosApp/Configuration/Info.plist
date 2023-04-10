@@ -8,6 +8,25 @@
 		<string>Ubuntu-Bold.ttf</string>
 		<string>Ubuntu-Italic.ttf</string>
 		<string>Ubuntu-BoldItalic.ttf</string>
+		<string>MPLUSRounded1c-Black.ttf</string>
+		<string>MPLUSRounded1c-Bold.ttf</string>
+		<string>MPLUSRounded1c-ExtraBold.ttf</string>
+		<string>MPLUSRounded1c-Light.ttf</string>
+		<string>MPLUSRounded1c-Medium.ttf</string>
+		<string>MPLUSRounded1c-Regular.ttf</string>
+		<string>MPLUSRounded1c-Thin.ttf</string>
+        <string>Roboto-Black.ttf</string>
+        <string>Roboto-BlackItalic.ttf</string>
+        <string>Roboto-Bold.ttf</string>
+        <string>Roboto-BoldItalic.ttf</string>
+        <string>Roboto-Italic.ttf</string>
+        <string>Roboto-Light.ttf</string>
+        <string>Roboto-LightItalic.ttf</string>
+        <string>Roboto-Medium.ttf</string>
+        <string>Roboto-MediumItalic.ttf</string>
+        <string>Roboto-Regular.ttf</string>
+        <string>Roboto-Thin.ttf</string>
+        <string>Roboto-ThinItalic.ttf</string>
 	</array>
 </dict>
 </plist>

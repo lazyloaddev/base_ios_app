@@ -2,6 +2,8 @@ import SwiftUI
 
 enum CustomFonts: String {
     case ubuntu = "Ubuntu"
+    case roboto = "Roboto"
+    case RoundedMplus1c = "Rounded Mplus 1c"
 }
 
 struct FontBuilder {
@@ -22,7 +24,7 @@ struct FontBuilder {
         
         let uiFont = UIFont(name: customFont.rawValue, size: fontSize) ?? .systemFont(ofSize: fontSize)
         self.lineSpacing = lineHeight - uiFont.lineHeight
-        self.verticalPadding = (lineHeight - uiFont.lineHeight) / 2
+        self.verticalPadding = self.lineSpacing / 2
     }
     
 }
