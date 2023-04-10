@@ -33,6 +33,7 @@
 		F5B76B3B29E3CF630069CAA5 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2F29E3CF630069CAA5 /* Roboto-BlackItalic.ttf */; };
 		F5B76B3C29E3CF630069CAA5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B3029E3CF630069CAA5 /* Roboto-Light.ttf */; };
 		F5B76B3F29E3D2060069CAA5 /* CustomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B76B3E29E3D2060069CAA5 /* CustomIcons.swift */; };
+		F5B76B4129E3E0890069CAA5 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B76B4029E3E0890069CAA5 /* RoundedCorner.swift */; };
 		F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E328FF297E9E0C00E10E13 /* MyApp.swift */; };
 		F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E32901297E9E0C00E10E13 /* ContentView.swift */; };
 		F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32903297E9E0C00E10E13 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		F5B76B2F29E3CF630069CAA5 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		F5B76B3029E3CF630069CAA5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		F5B76B3E29E3D2060069CAA5 /* CustomIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIcons.swift; sourceTree = "<group>"; };
+		F5B76B4029E3E0890069CAA5 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		F5E328FC297E9E0C00E10E13 /* BaseIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E328FF297E9E0C00E10E13 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		F5E32901297E9E0C00E10E13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			children = (
 				F5E328FF297E9E0C00E10E13 /* MyApp.swift */,
 				F5E32901297E9E0C00E10E13 /* ContentView.swift */,
+				F5B76B4029E3E0890069CAA5 /* RoundedCorner.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */,
+				F5B76B4129E3E0890069CAA5 /* RoundedCorner.swift in Sources */,
 				F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */,
 				F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */,
 				F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */,
