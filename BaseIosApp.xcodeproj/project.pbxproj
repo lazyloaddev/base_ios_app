@@ -473,6 +473,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BaseIosApp/Resources/PreviewContent\"";
 				DEVELOPMENT_TEAM = GMD7EK7S94;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseIosApp/Configuration/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
@@ -510,6 +511,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BaseIosApp/Resources/PreviewContent\"";
 				DEVELOPMENT_TEAM = GMD7EK7S94;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseIosApp/Configuration/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";

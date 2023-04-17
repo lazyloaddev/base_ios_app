@@ -225,3 +225,16 @@ private struct TabBarButton: View {
 }
 
 
+struct FoodFiaryScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        TabBarButton(
+            icon: .trash,
+            title: "FOOD DIARY",
+            backgroundColor: .white,
+            foregroundColor: .mainText,
+            roundedCorners: []
+        )
+        .previewDisplayName("олдол")
+        .padding()
+    }
+}
