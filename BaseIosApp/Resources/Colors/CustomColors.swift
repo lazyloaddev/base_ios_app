@@ -13,6 +13,7 @@ enum CustomColors: String {
     case minorTxt
     case warning
     case white
+    case calculatorNumber
 }
 
 

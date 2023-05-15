@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523AA4229D1B5F500977D41 /* CustomColors.swift */; };
+		F53C888A2A12324C009CDF64 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53C88892A12324C009CDF64 /* CalculatorScreen.swift */; };
 		F5680B9729ECFEF900B292CC /* FoodFiaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5680B9629ECFEF900B292CC /* FoodFiaryScreen.swift */; };
 		F58746BF29C831700059E3AA /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */; };
 		F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58746C029C83B100059E3AA /* CustomFonts.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		F523AA4229D1B5F500977D41 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		F53C88892A12324C009CDF64 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 		F5680B9629ECFEF900B292CC /* FoodFiaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFiaryScreen.swift; sourceTree = "<group>"; };
 		F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		F58746C029C83B100059E3AA /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				F5680B9629ECFEF900B292CC /* FoodFiaryScreen.swift */,
+				F53C88892A12324C009CDF64 /* CalculatorScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */,
 				F5B76B4129E3E0890069CAA5 /* RoundedCorner.swift in Sources */,
 				F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */,
+				F53C888A2A12324C009CDF64 /* CalculatorScreen.swift in Sources */,
 				F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */,
 				F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */,
 				F5B76B3F29E3D2060069CAA5 /* CustomIcons.swift in Sources */,
@@ -484,7 +488,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,7 +525,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
