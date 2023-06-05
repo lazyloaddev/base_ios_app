@@ -6,9 +6,36 @@ struct CalculatorScreen: View {
         VStack(spacing: 0) {
             Spacer()
             TextPanel()
-            ButtonPanel()
+            ButtonPanel { buttonType in
+                handleTap(buttonType: buttonType)
+            }
         }
         .background(.black)
+    }
+    
+    func handleTap(buttonType: CalcButtonType) {
+        switch buttonType {
+        case .clear:
+            print("clear pressed")
+        case .inversion:
+            print("inversion pressed")
+        case .percent:
+            print("percent pressed")
+        case .divide:
+            print("divide pressed")
+        case .multiple:
+            print("multiple pressed")
+        case .minus:
+            print("minus pressed")
+        case .plus:
+            print("plus pressed")
+        case .equal:
+            print("equal pressed")
+        case .dot:
+            print("dot pressed")
+        case .number(let number):
+            print("number \(number) pressed")
+        }
     }
     
 }
@@ -25,75 +52,135 @@ struct TextPanel: View {
     
 }
 
+
 struct ButtonPanel: View {
     
+    let action: (CalcButtonType) -> Void
+    
     var body: some View {
+        let symbolsStyle = CalcButtonStyle(parameters: .symbols)
+        let actionStyle = CalcButtonStyle(parameters: .action)
+        let numberStyle = CalcButtonStyle(parameters: .number)
         Grid(horizontalSpacing: 10, verticalSpacing: 10) {
             GridRow {
-                CalcButton(data: CalcButtonData(title: "AC", style: .symbols))
-                CalcButton(data: CalcButtonData(title: "±", style: .symbols))
-                CalcButton(data: CalcButtonData(title: "%", style: .symbols))
-                CalcButton(data: CalcButtonData(title: "÷", style: .action))
+                makeButton(.clear, symbolsStyle)
+                makeButton(.inversion, symbolsStyle)
+                makeButton(.percent, symbolsStyle)
+                makeButton(.divide, actionStyle)
             }
             GridRow {
-                CalcButton(data: CalcButtonData(title: "7", style: .number))
-                CalcButton(data: CalcButtonData(title: "8", style: .number))
-                CalcButton(data: CalcButtonData(title: "9", style: .number))
-                CalcButton(data: CalcButtonData(title: "x", style: .action))
+                makeButton(.number(7), numberStyle)
+                makeButton(.number(8), numberStyle)
+                makeButton(.number(9), numberStyle)
+                makeButton(.multiple, actionStyle)
             }
             GridRow {
-                CalcButton(data: CalcButtonData(title: "4", style: .number))
-                CalcButton(data: CalcButtonData(title: "5", style: .number))
-                CalcButton(data: CalcButtonData(title: "6", style: .number))
-                CalcButton(data: CalcButtonData(title: "-", style: .action))
+                makeButton(.number(4), numberStyle)
+                makeButton(.number(5), numberStyle)
+                makeButton(.number(6), numberStyle)
+                makeButton(.minus, actionStyle)
             }
             GridRow {
-                CalcButton(data: CalcButtonData(title: "1", style: .number))
-                CalcButton(data: CalcButtonData(title: "2", style: .number))
-                CalcButton(data: CalcButtonData(title: "3", style: .number))
-                CalcButton(data: CalcButtonData(title: "+", style: .action))
+                makeButton(.number(1), numberStyle)
+                makeButton(.number(2), numberStyle)
+                makeButton(.number(3), numberStyle)
+                makeButton(.plus, actionStyle)
             }
             GridRow {
-                CalcButton(data: CalcButtonData(title: "0", style: .number))
+                makeButton(.number(0), numberStyle)
                 Spacer()
-                CalcButton(data: CalcButtonData(title: ".", style: .number))
-                CalcButton(data: CalcButtonData(title: "=", style: .number))
+                makeButton(.dot, numberStyle)
+                makeButton(.equal, numberStyle)
             }
         }.fixedSize(horizontal: false, vertical: true)
     }
     
+    func makeButton(
+        _ type: CalcButtonType,
+        _ style: CalcButtonStyle
+    ) -> some View {
+        CalcButton(type: type, action: action).buttonStyle(style)
+    }
 }
 
-struct CalcButtonData {
-    let title: String
-    let style: CalcButtonStyle
-}
-
-struct CalcButtonStyle {
-    let titleColor: Color
-    let backgroundColor: Color
+enum CalcButtonType {
+    case clear
+    case inversion
+    case percent
+    case divide
+    case multiple
+    case minus
+    case plus
+    case equal
+    case dot
+    case number(Int)
     
-    static let symbols = CalcButtonStyle(titleColor: .black, backgroundColor: .gray)
-    static let number = CalcButtonStyle(titleColor: .white, backgroundColor: Color(.calculatorNumber))
-    static let action = CalcButtonStyle(titleColor: .white, backgroundColor: .orange)
+    var title: String {
+        switch self {
+        case .clear:
+            return "AC"
+        case .inversion:
+            return "±"
+        case .percent:
+            return "%"
+        case .divide:
+            return "÷"
+        case .multiple:
+            return "x"
+        case .minus:
+            return "-"
+        case .plus:
+            return "+"
+        case .equal:
+            return "="
+        case .dot:
+            return "."
+        case .number(let number):
+            return "\(number)"
+        }
+    }
 }
+
 
 struct CalcButton: View {
-    let data: CalcButtonData
     
+    let type: CalcButtonType
+    let action: (CalcButtonType) -> Void
+
     var body: some View {
-        Text(data.title)
-            .foregroundColor(data.style.titleColor)
-            .font(Font.system(size: 60))
+        Button(type.title) {
+            action(type)
+        }
+    }
+    
+}
+
+struct CalcButtonStyle: ButtonStyle {
+    
+    let parameters: CalcButtonStyleParameters
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .foregroundColor(parameters.titleColor)
+            .font(Font.system(size: 100))
             .minimumScaleFactor(0.1)
             .padding(20)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .aspectRatio(1, contentMode: .fit)
-            .background(data.style.backgroundColor)
+            .background(parameters.backgroundColor)
             .cornerRadius(.infinity)
+            .opacity(configuration.isPressed ? 0.5 : 1.0)
     }
 }
 
+struct CalcButtonStyleParameters {
+    let titleColor: Color
+    let backgroundColor: Color
+    
+    static let symbols = CalcButtonStyleParameters(titleColor: .black, backgroundColor: .gray)
+    static let number = CalcButtonStyleParameters(titleColor: .white, backgroundColor: Color(.calculatorNumber))
+    static let action = CalcButtonStyleParameters(titleColor: .white, backgroundColor: .orange)
+}
 
 struct CalculatorScreen_Previews: PreviewProvider {
     static var previews: some View {

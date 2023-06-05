@@ -2,48 +2,44 @@ import SwiftUI
 
 
 struct ContentView: View {
+    
+    @State var number = 0
+    
     var body: some View {
-        Grid(alignment: .center, horizontalSpacing: 5, verticalSpacing: 10) {
-            GridRow {
-                Text("Lorem ipsum")
-                    .background(.red)
-                Text("dolor sit amet, consectetur adipiscing elit")
-                    .background(.red)
-                Text("Donec tempor, ante dictum scelerisque blandit")
-                    .background(.red)
-                Text("D")
-                    .background(.red)
-                    .gridColumnAlignment(.leading)
+        VStack {
+            Text("\(number)").monospacedDigit()
+                .font(.system(size: 40))
+                .padding([.bottom], 10)
+            CounterView(number: $number)
+        }
+    }
+
+}
+
+struct CounterView: View {
+    @Binding var number: Int
+    
+    var body: some View {
+        HStack {
+            Button {
+                number -= 1
+            } label: {
+                Image(systemName: "minus.square.fill")
+                    .resizable()
+                    .frame(width: 44, height: 44)
             }
-            GridRow {
-                Text("Lorem ipsum")
-                    .background(.red)
-                Text("dolor")
-                    .background(.red)
-                Text("Donec")
-                    .background(.red)
-                Text("e")
-                    .background(.red)
-            }
-            GridRow {
-                Text("Lorem ipsum amet")
-                    .background(.red)
-                    .gridCellColumns(2)
-                Text("dolor sit amet, ")
-                    .background(.red)
-                Text("D")
-                    .background(.red)
-            }
-            GridRow {
-                Spacer()
-                Spacer()
-                Spacer()
-                Text("D")
-                    .frame(maxWidth: 100)
+            Text("\(number)").monospacedDigit()
+                .font(.system(size: 40))
+                .padding([.bottom], 10)
+            Button {
+                number += 1
+            } label: {
+                Image(systemName: "plus.square.fill")
+                    .resizable()
+                    .frame(width: 44, height: 44)
             }
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
