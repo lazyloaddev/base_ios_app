@@ -1,11 +1,34 @@
 import SwiftUI
 
+enum MathOperation {
+    case divide
+    case multiple
+    case minus
+    case plus
+}
+
 struct CalculatorScreen: View {
+    
+    static let initialStringValue = "0"
+    static let defaultEmptyValue = 0.0
+    static let negativeNumberSymbol = "-"
+    static let numberDeviderSymbol = "."
+    static let zeroIntegerPartNumberSymbol  = "0."
+    
+    
+    @State var currentNumber = initialStringValue
+    @State var buffer = defaultEmptyValue
+    @State var operation: MathOperation?
+    
+    var currentValue: Double {
+        Double(currentNumber) ?? Self.defaultEmptyValue
+    }
     
     var body: some View {
         VStack(spacing: 0) {
             Spacer()
-            TextPanel()
+            TextPanel(text: $currentNumber)
+                .padding([.bottom], 10)
             ButtonPanel { buttonType in
                 handleTap(buttonType: buttonType)
             }
@@ -16,25 +39,57 @@ struct CalculatorScreen: View {
     func handleTap(buttonType: CalcButtonType) {
         switch buttonType {
         case .clear:
-            print("clear pressed")
+            currentNumber = Self.initialStringValue
         case .inversion:
-            print("inversion pressed")
+            if currentNumber.hasPrefix(Self.negativeNumberSymbol) {
+                currentNumber.trimPrefix(Self.negativeNumberSymbol)
+            } else {
+                currentNumber = Self.negativeNumberSymbol + currentNumber
+            }
         case .percent:
-            print("percent pressed")
+            let result = currentValue / 100
+            currentNumber = "\(result)"
         case .divide:
-            print("divide pressed")
+            buffer = currentValue
+            currentNumber = Self.initialStringValue
+            operation = .divide
         case .multiple:
-            print("multiple pressed")
+            buffer = currentValue
+            currentNumber = Self.initialStringValue
+            operation = .multiple
         case .minus:
-            print("minus pressed")
+            buffer = currentValue
+            currentNumber = Self.initialStringValue
+            operation = .minus
         case .plus:
-            print("plus pressed")
+            buffer = currentValue
+            currentNumber = Self.initialStringValue
+            operation = .plus
         case .equal:
-            print("equal pressed")
+            guard let operation = operation else { return }
+            let result: Double
+            switch operation {
+            case .divide:
+                result = buffer / currentValue
+            case .multiple:
+                result = buffer * currentValue
+            case .minus:
+                result = buffer - currentValue
+            case .plus:
+                result = buffer + currentValue
+            }
+            currentNumber = "\(result)"
+            buffer = Self.defaultEmptyValue
+            self.operation = nil
         case .dot:
-            print("dot pressed")
+            guard !currentNumber.contains(Self.numberDeviderSymbol) else {return }
+            currentNumber.append(Self.numberDeviderSymbol)
         case .number(let number):
-            print("number \(number) pressed")
+            guard currentNumber.count <= 15 else { return }
+            currentNumber.append("\(number)")
+            if !currentNumber.hasPrefix(Self.zeroIntegerPartNumberSymbol) {
+                currentNumber.trimPrefix(Self.initialStringValue)
+            }
         }
     }
     
@@ -42,8 +97,12 @@ struct CalculatorScreen: View {
 
 struct TextPanel: View {
     
+    @Binding var text: String
+    
     var body: some View {
-        Text("123.4")
+        Text(text)
+            .lineLimit(1)
+            .minimumScaleFactor(0.1)
             .foregroundColor(.white)
             .font(Font.system(size: 90, weight: .thin))
             .frame(maxWidth: .infinity, alignment: .trailing)
