@@ -10,6 +10,16 @@
 		F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523AA4229D1B5F500977D41 /* CustomColors.swift */; };
 		F53C888D2A126574009CDF64 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53C888C2A126574009CDF64 /* CalculatorScreen.swift */; };
 		F5680B9729ECFEF900B292CC /* FoodFiaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5680B9629ECFEF900B292CC /* FoodFiaryScreen.swift */; };
+		F587140E2A6E4FEC00C8917C /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587140D2A6E4FEC00C8917C /* LoginScreen.swift */; };
+		F58714102A6E4FF900C8917C /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587140F2A6E4FF900C8917C /* RegisterScreen.swift */; };
+		F587141A2A6E510400C8917C /* AppFlowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58714192A6E510400C8917C /* AppFlowScreen.swift */; };
+		F587141C2A6E524800C8917C /* AuthFlowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587141B2A6E524800C8917C /* AuthFlowScreen.swift */; };
+		F587141E2A6E525400C8917C /* MainFlowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587141D2A6E525400C8917C /* MainFlowScreen.swift */; };
+		F58714202A6E5CB200C8917C /* TodoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587141F2A6E5CB200C8917C /* TodoListScreen.swift */; };
+		F58714222A6E5CC300C8917C /* NewTodoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58714212A6E5CC300C8917C /* NewTodoScreen.swift */; };
+		F58714242A6E5CCC00C8917C /* DateListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58714232A6E5CCC00C8917C /* DateListScreen.swift */; };
+		F58714262A6E5D0000C8917C /* TodayFlowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58714252A6E5D0000C8917C /* TodayFlowScreen.swift */; };
+		F58714282A6E5D1200C8917C /* HistoryFlowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58714272A6E5D1200C8917C /* HistoryFlowScreen.swift */; };
 		F58746BF29C831700059E3AA /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */; };
 		F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58746C029C83B100059E3AA /* CustomFonts.swift */; };
 		F58746C329C843430059E3AA /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */; };
@@ -40,12 +50,24 @@
 		F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E32901297E9E0C00E10E13 /* ContentView.swift */; };
 		F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32903297E9E0C00E10E13 /* Assets.xcassets */; };
 		F5E32907297E9E0C00E10E13 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32906297E9E0C00E10E13 /* PreviewAssets.xcassets */; };
+		F5EA72AB2A6E684300C4DC68 /* TodoDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA72AA2A6E684300C4DC68 /* TodoDetailScreen.swift */; };
+		F5EA72AE2A6E6D8700C4DC68 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA72AD2A6E6D8700C4DC68 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F523AA4229D1B5F500977D41 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		F53C888C2A126574009CDF64 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 		F5680B9629ECFEF900B292CC /* FoodFiaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFiaryScreen.swift; sourceTree = "<group>"; };
+		F587140D2A6E4FEC00C8917C /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		F587140F2A6E4FF900C8917C /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		F58714192A6E510400C8917C /* AppFlowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowScreen.swift; sourceTree = "<group>"; };
+		F587141B2A6E524800C8917C /* AuthFlowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowScreen.swift; sourceTree = "<group>"; };
+		F587141D2A6E525400C8917C /* MainFlowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowScreen.swift; sourceTree = "<group>"; };
+		F587141F2A6E5CB200C8917C /* TodoListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListScreen.swift; sourceTree = "<group>"; };
+		F58714212A6E5CC300C8917C /* NewTodoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoScreen.swift; sourceTree = "<group>"; };
+		F58714232A6E5CCC00C8917C /* DateListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateListScreen.swift; sourceTree = "<group>"; };
+		F58714252A6E5D0000C8917C /* TodayFlowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFlowScreen.swift; sourceTree = "<group>"; };
+		F58714272A6E5D1200C8917C /* HistoryFlowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryFlowScreen.swift; sourceTree = "<group>"; };
 		F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		F58746C029C83B100059E3AA /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 		F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
@@ -78,6 +100,8 @@
 		F5E32903297E9E0C00E10E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5E32906297E9E0C00E10E13 /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
 		F5E3290D297EA60D00E10E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EA72AA2A6E684300C4DC68 /* TodoDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailScreen.swift; sourceTree = "<group>"; };
+		F5EA72AD2A6E6D8700C4DC68 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +134,26 @@
 		F5680B9529ECFE6A00B292CC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F587140A2A6E4FC200C8917C /* Todo */,
 				F5680B9629ECFEF900B292CC /* FoodFiaryScreen.swift */,
 				F53C888C2A126574009CDF64 /* CalculatorScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		F587140A2A6E4FC200C8917C /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				F5EA72B22A6EAD0900C4DC68 /* Flow */,
+				F587140D2A6E4FEC00C8917C /* LoginScreen.swift */,
+				F587140F2A6E4FF900C8917C /* RegisterScreen.swift */,
+				F5EA72AA2A6E684300C4DC68 /* TodoDetailScreen.swift */,
+				F587141F2A6E5CB200C8917C /* TodoListScreen.swift */,
+				F58714212A6E5CC300C8917C /* NewTodoScreen.swift */,
+				F58714232A6E5CCC00C8917C /* DateListScreen.swift */,
+				F58714192A6E510400C8917C /* AppFlowScreen.swift */,
+			);
+			path = Todo;
 			sourceTree = "<group>";
 		};
 		F58746BB29C82EB40059E3AA /* Fonts */ = {
@@ -216,6 +256,7 @@
 		F5E32ABB2987981900E10E13 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				F5EA72AC2A6E6D7B00C4DC68 /* Entity */,
 				F5680B9429ECFE3E00B292CC /* UI */,
 				F5E328FF297E9E0C00E10E13 /* MyApp.swift */,
 				F5E32901297E9E0C00E10E13 /* ContentView.swift */,
@@ -242,6 +283,25 @@
 				F5E32905297E9E0C00E10E13 /* PreviewContent */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5EA72AC2A6E6D7B00C4DC68 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F5EA72AD2A6E6D8700C4DC68 /* Todo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F5EA72B22A6EAD0900C4DC68 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				F587141B2A6E524800C8917C /* AuthFlowScreen.swift */,
+				F587141D2A6E525400C8917C /* MainFlowScreen.swift */,
+				F58714252A6E5D0000C8917C /* TodayFlowScreen.swift */,
+				F58714272A6E5D1200C8917C /* HistoryFlowScreen.swift */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,14 +398,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F587141A2A6E510400C8917C /* AppFlowScreen.swift in Sources */,
 				F58746C129C83B100059E3AA /* CustomFonts.swift in Sources */,
 				F5B76B4129E3E0890069CAA5 /* RoundedCorner.swift in Sources */,
 				F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */,
 				F53C888D2A126574009CDF64 /* CalculatorScreen.swift in Sources */,
+				F58714222A6E5CC300C8917C /* NewTodoScreen.swift in Sources */,
 				F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */,
 				F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */,
+				F58714262A6E5D0000C8917C /* TodayFlowScreen.swift in Sources */,
+				F58714102A6E4FF900C8917C /* RegisterScreen.swift in Sources */,
+				F58714242A6E5CCC00C8917C /* DateListScreen.swift in Sources */,
+				F58714202A6E5CB200C8917C /* TodoListScreen.swift in Sources */,
+				F58714282A6E5D1200C8917C /* HistoryFlowScreen.swift in Sources */,
+				F587141E2A6E525400C8917C /* MainFlowScreen.swift in Sources */,
 				F5B76B3F29E3D2060069CAA5 /* CustomIcons.swift in Sources */,
+				F587141C2A6E524800C8917C /* AuthFlowScreen.swift in Sources */,
 				F5680B9729ECFEF900B292CC /* FoodFiaryScreen.swift in Sources */,
+				F587140E2A6E4FEC00C8917C /* LoginScreen.swift in Sources */,
+				F5EA72AB2A6E684300C4DC68 /* TodoDetailScreen.swift in Sources */,
+				F5EA72AE2A6E6D8700C4DC68 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
