@@ -151,7 +151,6 @@
 				F587141F2A6E5CB200C8917C /* TodoListScreen.swift */,
 				F58714212A6E5CC300C8917C /* NewTodoScreen.swift */,
 				F58714232A6E5CCC00C8917C /* DateListScreen.swift */,
-				F58714192A6E510400C8917C /* AppFlowScreen.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -296,6 +295,7 @@
 		F5EA72B22A6EAD0900C4DC68 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				F58714192A6E510400C8917C /* AppFlowScreen.swift */,
 				F587141B2A6E524800C8917C /* AuthFlowScreen.swift */,
 				F587141D2A6E525400C8917C /* MainFlowScreen.swift */,
 				F58714252A6E5D0000C8917C /* TodayFlowScreen.swift */,
