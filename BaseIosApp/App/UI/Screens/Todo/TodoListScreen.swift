@@ -35,12 +35,10 @@ struct TodoListScreen: View {
             }
         }
         .sheet(isPresented: $isNewTodoScreenPresented) {
-            NewTodoScreen(
-                onSave: { title, description in
-                    newTodo(title: title, description: description)
-                    isNewTodoScreenPresented = false
-                }
-            )
+            NewTodoScreen { title, description in
+                newTodo(title: title, description: description)
+                isNewTodoScreenPresented = false
+            }
         }
     }
     

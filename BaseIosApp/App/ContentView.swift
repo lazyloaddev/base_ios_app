@@ -1,46 +1,57 @@
 import SwiftUI
 
-
 struct ContentView: View {
-    
-    @State var number = 0
-    
+
+    @State var one = 1
+    @State var two = 1
+
     var body: some View {
-        VStack {
-            Text("\(number)").monospacedDigit()
-                .font(.system(size: 40))
-                .padding([.bottom], 10)
-            CounterView(number: $number)
+        let queue = DispatchQueue(label: "1")
+        let queue2 = DispatchQueue(label: "2", target: queue)
+        print(one)
+        return VStack {
+            Button("1") {
+                one += 1
+            }
+            Button("2") {
+                two += 1
+            }
+
+            V1(s: $one)
+            V2(s: $two)
+
+            Text("\(two)")
         }
     }
 
 }
 
-struct CounterView: View {
-    @Binding var number: Int
-    
+
+struct V1: View {
+
+    @Binding var s: Int
+
     var body: some View {
-        HStack {
-            Button {
-                number -= 1
-            } label: {
-                Image(systemName: "minus.square.fill")
-                    .resizable()
-                    .frame(width: 44, height: 44)
-            }
-            Text("\(number)").monospacedDigit()
-                .font(.system(size: 40))
-                .padding([.bottom], 10)
-            Button {
-                number += 1
-            } label: {
-                Image(systemName: "plus.square.fill")
-                    .resizable()
-                    .frame(width: 44, height: 44)
-            }
+        Button("\(s)") {
+            s += 1
         }
     }
+
 }
+
+struct V2: View {
+
+    @Binding var s: Int
+
+    var body: some View {
+        Button("\(s)") {
+            s += 1
+        }
+    }
+
+}
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

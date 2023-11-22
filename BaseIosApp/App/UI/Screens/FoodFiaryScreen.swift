@@ -82,6 +82,7 @@ private struct CaloriesInfoAmount: View {
                 .font(FontBuilder.h2.font)
                 .lineSpacing(FontBuilder.h2.lineSpacing)
                 .padding([.top], FontBuilder.h2.verticalPadding)
+                .tracking(FontBuilder.h2.tracking)
                 .padding(.trailing, 10)
             Image(.upSmall)
         }
@@ -202,10 +203,10 @@ private struct TabBar: View {
 }
 
 private struct TabBarButton: View {
-    let icon: CustomIcons
+    let icon: ImageResource
     let title: String
-    let backgroundColor: CustomColors
-    let foregroundColor: CustomColors
+    let backgroundColor: ColorResource
+    let foregroundColor: ColorResource
     let roundedCorners: UIRectCorner
     
     var body: some View {
@@ -220,7 +221,7 @@ private struct TabBarButton: View {
         .foregroundColor(Color(foregroundColor))
         .frame(maxWidth: .infinity, minHeight: 56, maxHeight: 56)
         .background(Color(backgroundColor))
-        .clipShape(RoundedCorner(radius: 10, corners: roundedCorners))
+        .clipShape(RoundedCorner(radius: 10, corners: roundedCorners)).onAppear()
     }
 }
 

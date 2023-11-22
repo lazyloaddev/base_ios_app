@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523AA4229D1B5F500977D41 /* CustomColors.swift */; };
 		F53C888D2A126574009CDF64 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53C888C2A126574009CDF64 /* CalculatorScreen.swift */; };
 		F5680B9729ECFEF900B292CC /* FoodFiaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5680B9629ECFEF900B292CC /* FoodFiaryScreen.swift */; };
 		F58746BF29C831700059E3AA /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */; };
@@ -15,7 +14,6 @@
 		F58746C329C843430059E3AA /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */; };
 		F58746C529C848390059E3AA /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */; };
 		F58746C729C8487E0059E3AA /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */; };
-		F5917A0F2A862778005A0597 /* NewTodoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5917A0E2A862778005A0597 /* NewTodoScreen.swift */; };
 		F5B76B1D29E3CECF0069CAA5 /* MPLUSRounded1c-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1829E3CEC70069CAA5 /* MPLUSRounded1c-Regular.ttf */; };
 		F5B76B1E29E3CECF0069CAA5 /* MPLUSRounded1c-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1929E3CEC70069CAA5 /* MPLUSRounded1c-Black.ttf */; };
 		F5B76B1F29E3CECF0069CAA5 /* MPLUSRounded1c-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1B29E3CEC80069CAA5 /* MPLUSRounded1c-ExtraBold.ttf */; };
@@ -35,8 +33,8 @@
 		F5B76B3A29E3CF630069CAA5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2E29E3CF630069CAA5 /* Roboto-Bold.ttf */; };
 		F5B76B3B29E3CF630069CAA5 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B2F29E3CF630069CAA5 /* Roboto-BlackItalic.ttf */; };
 		F5B76B3C29E3CF630069CAA5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B3029E3CF630069CAA5 /* Roboto-Light.ttf */; };
-		F5B76B3F29E3D2060069CAA5 /* CustomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B76B3E29E3D2060069CAA5 /* CustomIcons.swift */; };
 		F5B76B4129E3E0890069CAA5 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B76B4029E3E0890069CAA5 /* RoundedCorner.swift */; };
+		F5C460D82A9C8B6800596C30 /* NewTodoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C460D72A9C8B6800596C30 /* NewTodoScreen.swift */; };
 		F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E328FF297E9E0C00E10E13 /* MyApp.swift */; };
 		F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E32901297E9E0C00E10E13 /* ContentView.swift */; };
 		F5E32904297E9E0C00E10E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E32903297E9E0C00E10E13 /* Assets.xcassets */; };
@@ -55,7 +53,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F523AA4229D1B5F500977D41 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		F53C888C2A126574009CDF64 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 		F5680B9629ECFEF900B292CC /* FoodFiaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFiaryScreen.swift; sourceTree = "<group>"; };
 		F58746BE29C831700059E3AA /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
@@ -63,7 +60,6 @@
 		F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
 		F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
-		F5917A0E2A862778005A0597 /* NewTodoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoScreen.swift; sourceTree = "<group>"; };
 		F5B76B1629E3CEC70069CAA5 /* MPLUSRounded1c-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Bold.ttf"; sourceTree = "<group>"; };
 		F5B76B1729E3CEC70069CAA5 /* MPLUSRounded1c-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Light.ttf"; sourceTree = "<group>"; };
 		F5B76B1829E3CEC70069CAA5 /* MPLUSRounded1c-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Regular.ttf"; sourceTree = "<group>"; };
@@ -83,8 +79,8 @@
 		F5B76B2E29E3CF630069CAA5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		F5B76B2F29E3CF630069CAA5 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		F5B76B3029E3CF630069CAA5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
-		F5B76B3E29E3D2060069CAA5 /* CustomIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIcons.swift; sourceTree = "<group>"; };
 		F5B76B4029E3E0890069CAA5 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		F5C460D72A9C8B6800596C30 /* NewTodoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoScreen.swift; sourceTree = "<group>"; };
 		F5E328FC297E9E0C00E10E13 /* BaseIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E328FF297E9E0C00E10E13 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		F5E32901297E9E0C00E10E13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,14 +111,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F523AA4129D1B5BC00977D41 /* Colors */ = {
-			isa = PBXGroup;
-			children = (
-				F523AA4229D1B5F500977D41 /* CustomColors.swift */,
-			);
-			path = Colors;
-			sourceTree = "<group>";
-		};
 		F5680B9429ECFE3E00B292CC /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,14 +184,6 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
-		F5B76B3D29E3D1F40069CAA5 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				F5B76B3E29E3D2060069CAA5 /* CustomIcons.swift */,
-			);
-			path = Icons;
-			sourceTree = "<group>";
-		};
 		F5E328F3297E9E0C00E10E13 = {
 			isa = PBXGroup;
 			children = (
@@ -261,8 +241,6 @@
 		F5E32ABD2987983500E10E13 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F5B76B3D29E3D1F40069CAA5 /* Icons */,
-				F523AA4129D1B5BC00977D41 /* Colors */,
 				F58746BB29C82EB40059E3AA /* Fonts */,
 				F5E32903297E9E0C00E10E13 /* Assets.xcassets */,
 				F5E32905297E9E0C00E10E13 /* PreviewContent */,
@@ -279,7 +257,7 @@
 				F5EA73C22A77D42B00C4DC68 /* TodoListScreen.swift */,
 				F5EA73C42A77D74600C4DC68 /* TodoDetailScreen.swift */,
 				F5EA73C82A77DC7200C4DC68 /* DateListScreen.swift */,
-				F5917A0E2A862778005A0597 /* NewTodoScreen.swift */,
+				F5C460D72A9C8B6800596C30 /* NewTodoScreen.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -408,15 +386,13 @@
 				F5B76B4129E3E0890069CAA5 /* RoundedCorner.swift in Sources */,
 				F5EA73042A70022100C4DC68 /* LoginScreen.swift in Sources */,
 				F5EA73092A7003D100C4DC68 /* AppFlowScreen.swift in Sources */,
-				F5917A0F2A862778005A0597 /* NewTodoScreen.swift in Sources */,
+				F5C460D82A9C8B6800596C30 /* NewTodoScreen.swift in Sources */,
 				F5EA730D2A7004CF00C4DC68 /* AuthFlowScreen.swift in Sources */,
 				F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */,
 				F5EA73C92A77DC7200C4DC68 /* DateListScreen.swift in Sources */,
 				F5EA73C72A77DBE600C4DC68 /* HistoryFlowScreen.swift in Sources */,
 				F53C888D2A126574009CDF64 /* CalculatorScreen.swift in Sources */,
-				F523AA4329D1B5F500977D41 /* CustomColors.swift in Sources */,
 				F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */,
-				F5B76B3F29E3D2060069CAA5 /* CustomIcons.swift in Sources */,
 				F5680B9729ECFEF900B292CC /* FoodFiaryScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,7 +4,6 @@ struct NewTodoScreen: View {
     
     @State var title = ""
     @State var description = ""
-    
     let onSave: (String, String) -> Void
     
     var body: some View {
