@@ -2,56 +2,65 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State var one = 1
-    @State var two = 1
+    @State var isPresented = false
+    @Environment(\.userId) var userId: Int?
+    @Environment(AppModel.self) var appModel
 
     var body: some View {
-        let queue = DispatchQueue(label: "1")
-        let queue2 = DispatchQueue(label: "2", target: queue)
-        print(one)
-        return VStack {
-            Button("1") {
-                one += 1
+        NavigationStack {
+            VStack {
+                Text("Counter: \(appModel.counter)")
+                FirstNestedView()
+                NavigationLink {
+                    FirstNestedView().userId(88)
+                } label: {
+                    Text("push")
+                }
+                Button("present") {
+                    isPresented = true
+                }
             }
-            Button("2") {
-                two += 1
-            }
+        }.sheet(isPresented: $isPresented, content: {
+            FirstNestedView()
+        })
 
-            V1(s: $one)
-            V2(s: $two)
-
-            Text("\(two)")
-        }
     }
 
 }
 
+struct FirstNestedView: View {
 
-struct V1: View {
-
-    @Binding var s: Int
+    @Environment(\.userId) var userId: Int?
 
     var body: some View {
-        Button("\(s)") {
-            s += 1
+        VStack {
+            Text("FirstNestedView \(userId ?? 0)")
+            SecondNestedView()
         }
+
+
     }
 
 }
 
-struct V2: View {
+struct SecondNestedView: View {
 
-    @Binding var s: Int
+    @Environment(\.userId) var userId: Int?
+    @Environment(AppModel.self) var appModel
 
     var body: some View {
-        Button("\(s)") {
-            s += 1
+        VStack {
+            Text("SecondNestedView \(userId ?? 0)")
+            Button(
+                action: { appModel.increaseCounter() },
+                label: {
+                    Text("increase counter")
+                }
+            )
         }
     }
 
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

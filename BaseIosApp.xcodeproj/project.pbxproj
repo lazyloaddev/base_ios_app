@@ -14,6 +14,7 @@
 		F58746C329C843430059E3AA /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */; };
 		F58746C529C848390059E3AA /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */; };
 		F58746C729C8487E0059E3AA /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */; };
+		F5A9232F2B1DA90800E47025 /* UserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9232E2B1DA90800E47025 /* UserId.swift */; };
 		F5B76B1D29E3CECF0069CAA5 /* MPLUSRounded1c-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1829E3CEC70069CAA5 /* MPLUSRounded1c-Regular.ttf */; };
 		F5B76B1E29E3CECF0069CAA5 /* MPLUSRounded1c-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1929E3CEC70069CAA5 /* MPLUSRounded1c-Black.ttf */; };
 		F5B76B1F29E3CECF0069CAA5 /* MPLUSRounded1c-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B76B1B29E3CEC80069CAA5 /* MPLUSRounded1c-ExtraBold.ttf */; };
@@ -60,6 +61,7 @@
 		F58746C229C843430059E3AA /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		F58746C429C848390059E3AA /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
 		F58746C629C8487E0059E3AA /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F5A9232E2B1DA90800E47025 /* UserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserId.swift; sourceTree = "<group>"; };
 		F5B76B1629E3CEC70069CAA5 /* MPLUSRounded1c-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Bold.ttf"; sourceTree = "<group>"; };
 		F5B76B1729E3CEC70069CAA5 /* MPLUSRounded1c-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Light.ttf"; sourceTree = "<group>"; };
 		F5B76B1829E3CEC70069CAA5 /* MPLUSRounded1c-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Regular.ttf"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		F5680B9429ECFE3E00B292CC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F5A9232D2B1DA8ED00E47025 /* EnviromentValues */,
 				F5680B9529ECFE6A00B292CC /* Screens */,
 			);
 			path = UI;
@@ -138,6 +141,14 @@
 				F58746C029C83B100059E3AA /* CustomFonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F5A9232D2B1DA8ED00E47025 /* EnviromentValues */ = {
+			isa = PBXGroup;
+			children = (
+				F5A9232E2B1DA90800E47025 /* UserId.swift */,
+			);
+			path = EnviromentValues;
 			sourceTree = "<group>";
 		};
 		F5B76B1429E3CEAA0069CAA5 /* Ubuntu */ = {
@@ -391,6 +402,7 @@
 				F5E32902297E9E0C00E10E13 /* ContentView.swift in Sources */,
 				F5EA73C92A77DC7200C4DC68 /* DateListScreen.swift in Sources */,
 				F5EA73C72A77DBE600C4DC68 /* HistoryFlowScreen.swift in Sources */,
+				F5A9232F2B1DA90800E47025 /* UserId.swift in Sources */,
 				F53C888D2A126574009CDF64 /* CalculatorScreen.swift in Sources */,
 				F5E32900297E9E0C00E10E13 /* MyApp.swift in Sources */,
 				F5680B9729ECFEF900B292CC /* FoodFiaryScreen.swift in Sources */,
@@ -450,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -504,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -536,7 +548,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,7 +585,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
